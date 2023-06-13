@@ -1,0 +1,2 @@
+:description: This section describes how to provide files for import using Neo4j Data Importer.
+= File provision

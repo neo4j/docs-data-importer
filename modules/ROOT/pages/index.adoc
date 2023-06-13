@@ -1,17 +1,27 @@
-= Docs template
+= The Neo4j Data Importer Manual
 
-This is the main index page for your docs project.
+Neo4j Data Importer is a UI-based tool for importing data into Neo4j.
 
-== Start page
+This manual covers the following areas:
 
-When you build your content locally, this page should be specified as the start page in _preview.yml_.
+* xref:introduction.adoc[Introduction] -- An introduction to the Neo4j Data Importer.
+* xref:file-provision.adoc[File provision] -- How to provide files for import.
+* xref:modeling.adoc[Modeling] -- Guidelines to model your data.
+* xref:mapping.adoc[Mapping] -- How to map your data to the model.
+* xref:import.adoc[Import] -- Preview and import your data.
+* xref:import-others.adoc[Other options for data import] -- Other ways to import data.
 
-[source, yaml, role=noheader]
-----
-start_page: docs-template:ROOT:index.adoc
-----
+ifdef::backend-pdf[]
+include::license.adoc[leveloffset=+1]
+endif::[]
 
-[TIP]
-====
-This repo contains example content such as asciidoc pages, re-usable fragments, and examples, to show where different types of files should be stored in an Antora project.
-====
+ifdef::backend-html5[(C) {copyright}]
+ifndef::backend-pdf[]
+
+Documentation license: link:{common-license-page-uri}[Creative Commons 4.0]
+endif::[]
+ifdef::backend-pdf[]
+(C) {copyright}
+
+Documentation license: <<license, Creative Commons 4.0>>
+endif::[]

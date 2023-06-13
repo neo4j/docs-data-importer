@@ -1,8 +1,8 @@
 # Use this playbook file when you need to build and publish multuple versions of your content together
 site:
-  title: Neo4j Docs Template
+  title: Neo4j Data Importer
   url: https://neo4j.com/docs/add-on
-  start_page: docs-template:ROOT:index.adoc
+  start_page: data-importer:ROOT:index.adoc
 
 content:
   sources:
@@ -45,14 +45,14 @@ asciidoc:
     page-canonical-root: /docs
     page-terms-to-mark: Cypher
     page-pagination: true
-    page-no-canonical: true 
+    page-no-canonical: true
     page-origin-private: true
     page-hide-toc: false
     page-mixpanel: 4bfb2414ab973c741b6f067bf06d5575
     includePDF: false
     nonhtmloutput: ""
     experimental: ''
-    copyright: 2022
+    copyright: 2023
     common-license-page-uri: https://neo4j.com/docs/license/
     check-mark: icon:check[]
     cross-mark: icon:times[]

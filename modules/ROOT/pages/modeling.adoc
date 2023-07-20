@@ -1,2 +1,62 @@
 :description: This section introduces data modeling.
 = Data modeling
+
+The data model is the is the blueprint for the database.
+It defines how the data is organized and is the key to create a graph from your flat files.
+The data model is what you map your flat files to.
+It consists of nodes and relationships.
+Nodes need to have a _label_ and one or more _properties_.
+Relationships need to have a _type_ and one or more _properties_.
+
+//Add pointer to Graph Academy course on Data Modeling?
+
+The data model panel is located in the center of the screen.
+It has buttons for collapsing the files panel, adding a node, discarding elements, previewing, running an import, and a more options button.
+
+image::model-panel.png[]
+
+== Create a node
+
+To create a node, click the _Add Node_ button.
+The button is located in the top left corner of the data model panel and it provides a circle outlined in blue.
+As mentioned previously, the node needs a label and one or more properties.
+The label can be typed directly on the node or in the _Label_ field in the mapping details panel, to the right of the model panel.
+The conventional way of labeling is to use CamelCase.
+
+In addition to a label, the node needs to be mapped to a file, which is done in the field _File_, below the lable field, in the mapping details panel.
+The mapping is not necessary to create the node, nor is adding properties, but both need to be done before the import can be run.
+See xref:mapping.adoc[Mapping] for more information on mapping.
+
+== Create a relationship
+
+To create a relationship, it is necessary to have at least one node already.
+If you hover over a selected node, a grey circle with a green plus sign appear on top of the blue cirlce.
+
+image::node-relationship.png[]
+
+The plus sign can be dragged to an empty space on the canvas and once released, a new node is created with a relationship to the first node.
+However, if you already have two nodes, you can just drag the plus sign from one node to the other and a relationship is created.
+
+Just like how you can type directly on the node, you can type directly on a selected relationship.
+This specifies the relationship type and can be done in the mapping details panel as well.
+The casing convention for relationship types is snake_case.
+
+The relationship needs to be mapped to a file and have at least one property, but again, this is not necessary to create the relationship.
+The section on xref:mapping.adoc[Mapping] covers this.
+
+A relationship always has a direction, and if needed, you can change the direction in your model with a button, as shown below.
+
+image::relationship.png[]
+
+== Deleting elements
+
+Elements can be deleted from the model by selecting them and either clicking the trash icon, or using the delete key on your keyboard.
+You can select all elements with kbd:[⌘+a] on Mac or kbd:[Ctrl+a] on Windows and delete them all at once.
+
+Alternatively, you can use the lasso-tool to select multiple elements at once.
+
+== Workflow
+
+The most efficient way to create a model from the data files is to map each created element to a file as you go.
+You can certainly create the properties for each element in your model manually, but it is more convenient and leaves less room for errors when they are selected from file.
+See the section on xref:mapping.adoc[Mapping] for more information.

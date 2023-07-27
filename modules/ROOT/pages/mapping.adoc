@@ -1,2 +1,91 @@
 :description: This sections describes how to map files to a data model.
 = Mapping
+
+Mapping is the process of associating a file with an element in your data model.
+This is what allows Data Importer to construct the Cypher statements needed to load your data.
+Your source files may contain data that is not relevant to your data model, and when you sketch your model, you can select what data to use.
+Only data that is mapped correctly to the elements in your model is imported, so it is important to get the mapping right.
+However, it is possible to run the import again, if you need to change the mapping.
+
+== Nodes
+
+To map a node to a file, the node needs to have a label, which you can type directly on the node or in the mapping detals panel.
+After naming the label, you can select the file to map to the node.
+Adding the file can be done at any time before running the import, but it is convenient to do it at this stage, as apparent further on.
+
+[.shadow]
+image::node-mapping.png[width=400]
+
+Additionally, the node needs to have at least one property and an ID.
+
+The properties are key-value pairs that describe the node.
+
+The ID is used to uniquely identify nodes and when connecting nodes to each other in relationships.
+If a node is seen more than once in the file, only the most recently viewed properties are set and this ensures that the node is not duplicated.
+As mentioned, the node ID is crucial when creating relationships and this is explained in further detail in the section on mapping <<mapping-relationships, relationships>>.
+
+If you added the file already, you can choose to map properties from that file.
+Data Importer derives the properties from the columns in the file and guesses the data type.
+With this option, you can select which properties to use.
+Once selected, you can rename the properties, change the data type, if needed, and select which property should serve as the node ID.
+
+By default, Data Importer uses the property with `id` in its name as the ID, but if none of the columns in the mapped file meet this condition, or if more than one do, you have to manually select which property to use as the node ID.
+Whether you let Data Importer select the ID or you do it manually, every node _needs_ to have an ID in order to complete the mapping.
+
+The property used as node ID is marked with a key icon.
+
+[.shadow]
+image::node-id.png[width=400]
+
+[[mapping-relationships]]
+== Relationships
+
+Much like how a node needs to have a label, a relationship needs to have a type.
+This can be typed directly on the relationship or in the mapping details panel.
+The file to map the relationship to is selected in the same way as for nodes and can be a separate file that contains only relationships or a file that contains both nodes and relationships.
+The crucial part is defining the _From_ and _To_ nodes connected by the relationship.
+This is defined in the _Node ID mapping_ section of the mapping details panel and requires the name of the ID and from which column in the file to read it.
+
+[.shadow]
+image::relationship-mapping.png[width=400]
+
+If a relationship is drawn between two nodes that are already completely mapped and the file contains the both _From_ and _To_ nodes as well as the relationship definition, Data Importer automatically maps the nodes, their IDs, and ID columns.
+The only thing you need to do is define the relationship type.
+
+Similarly, if the file contains the relationship but only one of the nodes, Data Importer automatically maps the nodes and their IDs, but you need to define the relationship type and the ID columns for the nodes.
+
+== File filtering
+
+When mapping a file, both to nodes and relationships, you can use a toggle to filter the file.
+This is useful when using aggregate node lists and relationship lists as source files.
+Aggregate node lists contain all the nodes in the same file and they can be separated/grouped together by having the same value in a specific column.
+Aggregate relationship lists contain corresponding information about relationships in one file and the relationships can be grouped together in the same fashion.
+The file filtering allows you to select a column and an exact value to match and only the elements that match are used as a source for that element in your data model.
+
+[.shadow]
+image::file-filtering.png[width=400]
+
+== Complete the mapping
+
+If the mapping is not complete, ie. if any element in the model is missing the green checkmark, the import can't be run.
+If you try, Data Importer sends an error message and highlights which element(s) in the model is missing information and also which fields in the mapping details panel need to be filled out.
+
+For nodes, the following information is required:
+
+* Label - to identify the type of a node
+* File - the source file for the node from which the properties are derived
+* Properties - at least one property needs to be selected and if more than one, one needs to be selected as the node ID
+
+For relationships:
+
+* Type - a name that describes the relationship it represents
+* File - the source file that contains information on which nodes are connected by the relationship
+* Node ID mapping - which nodes in the model are connected by the relationship; their labels, IDs and ID columns.
+
+If the mapping is not complete, you can run a preview of the import, but it does not contain incompletely mapped elements.
+
+Once every element in the model has a green checkmark to indicate complete mapping, the import can be run.
+
+[.shadow]
+
+[.shadow]

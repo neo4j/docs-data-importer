@@ -4,6 +4,7 @@
 Once the files are uploaded, the data model complete, and all elements mapped, the import can be run.
 However, you can _preview_ your data at any time and make sure that everything is mapped the way you expect before you run the actual import.
 
+[[preview]]
 == Preview
 
 The preview button is located next to the _Run import_ button and unlike running the import, the preview does *not* require an active connection.
@@ -20,7 +21,7 @@ The preview shows a sample of all data that is mapped _correctly_ in the model.
 Unlike the actual import, the preview can be run regardless of the completeness of the mapping.
 If any element is missing the green checkmark in the model, it will _not_ be included in the preview, but the preview can still be run.
 
-
+[[run-import]]
 == Run the import
 
 When you are happy with the model and the mapping is complete, the import can begin.

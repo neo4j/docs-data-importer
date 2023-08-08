@@ -1,10 +1,11 @@
-= The Neo4j Data Importer Manual
+= Neo4j Data Importer
 
 Neo4j Data Importer is a UI-based tool for importing data into Neo4j.
 
 This manual covers the following areas:
 
 * xref:introduction.adoc[Introduction] -- An introduction to the Neo4j Data Importer.
+* xref:overview.adoc[Overview] --  A visual tour of the Data Importer UI.
 * xref:file-provision.adoc[File provision] -- How to provide files for import.
 * xref:modeling.adoc[Modeling] -- Guidelines to model your data.
 * xref:mapping.adoc[Mapping] -- How to map your data to the model.

@@ -1,6 +1,6 @@
 * xref:index.adoc[]
 * xref:introduction.adoc[]
-* xref:visual-tour.adoc[]
+* xref:overview.adoc[]
 * xref:file-provision.adoc[]
 * xref:modeling.adoc[]
 * xref:mapping.adoc[]

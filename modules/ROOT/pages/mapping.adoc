@@ -65,6 +65,20 @@ The file filtering allows you to select a column and an exact value to match and
 [.shadow]
 image::file-filtering.png[width=400]
 
+[[exclude-list]]
+== Node exclude list
+
+Sometimes a source file may contain a column where multiple rows have the same string as the value, such as `[empty]` or `null`.
+If this column is used as node ID, and you run the import, this results in the creation of "super nodes".
+Every row in the mapped file that has such a value end up being connected to the same node, the "super node".
+To avoid this, you can specify strings that should cause Data Importer to exclude the rows they appear in.
+By default, Data Importer excludes any rows where the value of the node ID column is empty.
+
+The node exclude list is available from the more menu (`...`) in the data model panel, under _Settings_.
+
+image::node-exclude.png[width=300]
+
+
 == Complete the mapping
 
 If the mapping is not complete, ie. if any element in the model is missing the green checkmark, the import can't be run.
@@ -86,6 +100,3 @@ If the mapping is not complete, you can run a preview of the import, but it does
 
 Once every element in the model has a green checkmark to indicate complete mapping, the import can be run.
 
-[.shadow]
-
-[.shadow]

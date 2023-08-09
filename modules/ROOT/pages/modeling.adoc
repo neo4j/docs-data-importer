@@ -45,8 +45,8 @@ image::node-relationship.png[]
 The plus sign can be dragged to an empty space on the canvas and once released, a new node is created with a relationship to the first node.
 However, if you already have two nodes, you can just drag the plus sign from one node to the other and a relationship is created.
 
-Just like how you can type directly on the node, you can type directly on a selected relationship.
-This specifies the relationship type and can be done in the mapping details panel as well.
+You can type directly on a selected relationship to specify the relationship type.
+This can be done in the mapping details panel as well.
 The casing convention for relationship types is upper-case SNAKE_CASE, see link:https://neo4j.com/docs/cypher-manual/current/syntax/naming/#_recommendations[Cypher Manual -> Recommendations] for more information.
 
 The relationship needs to be mapped to a file and have at least one property, but again, this is not necessary to create the relationship.

@@ -16,13 +16,19 @@ It has buttons for collapsing the files panel, adding a node, discarding element
 [.shadow]
 image::model-panel.png[]
 
+== Workflow
+
+The most efficient way to create your model is to complete the mapping of each element, ie. select source file, IDs, and properties, before moving on to the next element.
+Being familiar with your files is essential to creating a good model.
+See the section on xref:mapping.adoc[Mapping] for more information.
+
 == Create a node
 
 To create a node, click the _Add Node_ button.
 The button is located in the top left corner of the data model panel and it provides a circle outlined in blue.
 As mentioned previously, the node needs a label and one or more properties.
 The label can be typed directly on the node or in the _Label_ field in the mapping details panel, to the right of the model panel.
-The conventional way of labeling is to use CamelCase.
+The conventional way of labeling is to use CamelCase, see link:https://neo4j.com/docs/cypher-manual/current/syntax/naming/#_recommendations[Cypher Manual -> Recommendations] for more information on labeling.
 
 In addition to a label, the node needs to be mapped to a file, which is done in the field _File_, below the lable field, in the mapping details panel.
 The mapping is not necessary to create the node, nor is adding properties, but both need to be done before the import can be run.
@@ -41,12 +47,12 @@ However, if you already have two nodes, you can just drag the plus sign from one
 
 Just like how you can type directly on the node, you can type directly on a selected relationship.
 This specifies the relationship type and can be done in the mapping details panel as well.
-The casing convention for relationship types is snake_case.
+The casing convention for relationship types is upper-case SNAKE_CASE, see link:https://neo4j.com/docs/cypher-manual/current/syntax/naming/#_recommendations[Cypher Manual -> Recommendations] for more information.
 
 The relationship needs to be mapped to a file and have at least one property, but again, this is not necessary to create the relationship.
 The section on xref:mapping.adoc[Mapping] covers this.
 
-A relationship always has a direction, and if needed, you can change the direction in your model with a button, as shown below.
+A relationship always has a direction, and if needed, you can reverse the direction in your model with a button, as shown below.
 
 [.shadow]
 image::relationship.png[]
@@ -58,8 +64,3 @@ You can select all elements with kbd:[⌘+a] on Mac or kbd:[Ctrl+a] on Windows a
 
 Alternatively, you can use the lasso-tool to select multiple elements at once.
 
-== Workflow
-
-The most efficient way to create your model is to complete the mapping of each element, ie. select source file, IDs, and properties, before moving on to the next element.
-Being familiar with your files is essential to creating a good model.
-See the section on xref:mapping.adoc[Mapping] for more information.

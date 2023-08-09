@@ -47,6 +47,10 @@ The load statement creates nodes for every item in the mapped file and adds the 
 For relationships, there is only a load statement.
 It finds the start (source) and end (target) nodes and creates a relationship between them and sets the assigned (if any) properties to the relationship.
 
+
+
+
+
 == Errors
 
 

@@ -3,9 +3,14 @@
 
 Mapping is the process of associating a file with an element in your data model.
 This is what allows Data Importer to construct the Cypher statements needed to load your data.
-Your source files may contain data that is not relevant to your data model, and when you sketch your model, you can select what data to use.
+Your source files may contain data that is not relevant to your data model, and when you build your model, you can select what data to use.
 Only data that is mapped correctly to the elements in your model is imported, so it is important to get the mapping right.
-However, it is possible to run the import again, if you need to change the mapping.
+
+[NOTE]
+====
+If you need to change the mapping, it is possible to run the import again.
+Affected elements already imported are updated and **not** duplicated.
+====
 
 == Nodes
 

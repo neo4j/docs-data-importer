@@ -18,3 +18,8 @@ In general, it is recommended to always use a secure connection.
 However, some web browsers have security constraints that require an unsecure connection.
 ====
 
+Workspace offers interactive, in-product guides where you can get a hands-on learning experience with all three available tools, Import, Explore, and Query.
+
+Many things covered in this document are also offered in the Import guide.
+The guides can be accessed from the top right corner of the UI.
+See xref:overview.adoc#guides[Neo4j guides] in the Overview section for more information.

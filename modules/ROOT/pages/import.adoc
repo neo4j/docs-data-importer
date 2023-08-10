@@ -40,7 +40,7 @@ The summary contains information about the imported nodes and relationships, inc
 The results summary also allows you to see the Cypher statement used to load a particular file.
 It is not advisable to copy and paste these statements, but seeing them can provide valuable insight into how constraints are created and how load statements are constructed.
 
-For nodes, you can see that there are two statements, a _key statement_ and a _load statement_.
+For nodes, there are two statements, a _key statement_ and a _load statement_.
 The key statement is concerned with creating a constraint to ensure the uniqueness of the nodes.
 The load statement creates nodes for every item in the mapped file and adds the assigned properties from the data model.
 

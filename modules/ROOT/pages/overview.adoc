@@ -53,6 +53,7 @@ See xref:import.adoc#run-import[Run the Import] for more information.
 The `...` menu contains options to open a saved model, with or without data, to save your current model, with or without data, settings for the import, and an option to clear everything.
 For more information on the settings, see xref:mapping.adoc#exclude-list[Node exclude list].
 
+[[guides]]
 == Neo4j guides
 
 This opens a selection of guides to help you get started with Neo4j and the tools available in the different tabs in Workspace.

@@ -1,7 +1,7 @@
 :description: This section describes other ways of importing data into Neo4j.
 = Other ways of importing data into Neo4j
 
-Using Data Importer to import data into a Neo4j database is not the only way and may not always be the best way to meet your importing needs.
+Using Data Importer to import data into a Neo4j database is not the only way and may not always be the best way to meet your importing requirements.
 There are other ways to load data that may be more suitable, depending on what your needs are.
 
 == `LOAD CSV`

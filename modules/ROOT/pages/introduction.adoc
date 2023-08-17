@@ -8,7 +8,10 @@ This means that you can import data from any source that can be exported to a fl
 Using Data Importer is only one way to import data into Neo4j and may not meet all import needs.
 See xref:import-others.adoc[] for a full list of options.
 
-Data Importer is available as both a standalone product and as part of Neo4j Workspace.
+Data Importer is currently available both as part of Neo4j Workspace and as a standalone product.
+Workspace is available on Neo4j AuraDB instances, and Data Importer is accessed via the _Import_ tab.
+Additionally, Workspace offers options to both query and visually explore your data, once it's imported.
+
 The standalone version is accessible at link:https://data-importer.neo4j.io/[] using a secure connection.
 Additionally, Data Importer standalone is also available at link:https://data-importer.graphapp.io/[] and link:http://data-importer.graphapp.io/[] with both secure and insecure connections.
 
@@ -22,4 +25,4 @@ Workspace offers interactive, in-product guides where you can get a hands-on lea
 
 Many things covered in this document are also offered in the Import guide.
 The guides can be accessed from the top right corner of the UI.
-See xref:overview.adoc#guides[Neo4j guides] in the Overview section for more information.
+

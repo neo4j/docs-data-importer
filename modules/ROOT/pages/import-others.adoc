@@ -20,7 +20,6 @@ See link:https://neo4j.com/docs/cypher-manual/current/clauses/load-csv/[Operatio
 Neo4j offers to capability of using different connectors to connect data from various sourced into Neo4j.
 See link:https://neo4j.com/docs/getting-started/languages-guides/integration-tools/integration/[Getting started -> Neo4j Connectors] for a list of available integrations.
 
-
 == APOC Load procedures
 
 If your data is not in a CSV format, using APOC Load procedures allows you to ingest data from formats including json, xml and arrow.

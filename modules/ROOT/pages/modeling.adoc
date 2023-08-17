@@ -25,12 +25,12 @@ See the section on xref:mapping.adoc[Mapping] for more information.
 == Create a node
 
 To create a node, click the _Add Node_ button.
-The button is located in the top left corner of the data model panel and it provides a circle outlined in blue.
+The button is located in the top left corner of the data model panel.
 As mentioned previously, the node needs a label and one or more properties.
-The label can be typed directly on the node or in the _Label_ field in the mapping details panel, to the right of the model panel.
+The label can be typed directly on the node or in the _Label_ field in the details panel, to the right of the model panel.
 The conventional way of labeling is to use CamelCase, see link:https://neo4j.com/docs/cypher-manual/current/syntax/naming/#_recommendations[Cypher Manual -> Recommendations] for more information on labeling.
 
-In addition to a label, the node needs to be mapped to a file, which is done in the field _File_, below the lable field, in the mapping details panel.
+In addition to a label, the node needs to be mapped to a file, which is done in the field _File_, below the lable field, in the details panel.
 The mapping is not necessary to create the node, nor is adding properties, but both need to be done before the import can be run.
 See xref:mapping.adoc[Mapping] for more information on mapping.
 
@@ -46,7 +46,7 @@ The plus sign can be dragged to an empty space on the canvas and once released, 
 However, if you already have two nodes, you can just drag the plus sign from one node to the other and a relationship is created.
 
 You can type directly on a selected relationship to specify the relationship type.
-This can be done in the mapping details panel as well.
+This can be done in the details panel as well.
 The casing convention for relationship types is upper-case SNAKE_CASE, see link:https://neo4j.com/docs/cypher-manual/current/syntax/naming/#_recommendations[Cypher Manual -> Recommendations] for more information.
 
 The relationship needs to be mapped to a file and have at least one property, but again, this is not necessary to create the relationship.

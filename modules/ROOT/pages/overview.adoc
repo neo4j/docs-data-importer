@@ -11,11 +11,6 @@ Each file can be expanded using the dropdown `&#709;` option, to display the hea
 The `...` menu allows you to delete the file.
 See xref:file-provision.adoc[] for more information about files.
 
-== Show/hide files panel
-
-If you need more space for the data model, the files panel can be collapsed using this button.
-Press it again to re-expand the files panel.
-
 == Data model panel
 
 The center of the UI is the canvas used to create the data model on.
@@ -37,33 +32,13 @@ Your current connection, if any, is displayed here.
 Expand this menu to show options for connection, to change password and to disconnect current connection.
 See xref:import.adoc#run-import[Run the import] for more information about the connection dropdown.
 
-== Preview
-
-To preview a sample of your data to make sure everything maps as expected.
-This action doesn't actually _import_ any data to the database.
-See xref:import.adoc#preview[Preview] for more information about the preview.
-
-== Import
-
-When you are confident that the data model is correct and all elements are mapped to appropriate files, this button imports the data to the database.
-See xref:import.adoc#run-import[Run the Import] for more information.
-
 == More menu
 
 The `...` menu contains options to open a saved model, with or without data, to save your current model, with or without data, settings for the import, and an option to clear everything.
 For more information on the settings, see xref:mapping.adoc#exclude-list[Node exclude list].
 
-[[guides]]
-== Neo4j guides
 
-This opens a selection of guides to help you get started with Neo4j and the tools available in the different tabs in Workspace.
-Note that this is **not** available with standalone Data Importer.
-
-== Help
-
-With standalone Data Importer, the help button contains some help resources as well as terms and conditions, but with Workspace, this has only terms and conditions.
-
-== Mapping details panel
+== Details panel
 
 Every element in the data model is mapped in this section.
 This is where you give labels to nodes and relationships, map them to files from the files panel, and specify their properties.

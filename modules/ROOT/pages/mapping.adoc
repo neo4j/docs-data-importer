@@ -46,10 +46,10 @@ image::node-id.png[width=400]
 == Relationships
 
 Much like how a node needs to have a label, a relationship needs to have a type.
-This can be typed directly on the relationship or in the mapping details panel.
+This can be typed directly on the relationship or in the details panel.
 The file to map the relationship to is selected in the same way as for nodes and can be a separate file that contains only relationships or a file that contains both nodes and relationships.
 The crucial part is defining the _From_ and _To_ nodes connected by the relationship.
-This is defined in the _Node ID mapping_ section of the mapping details panel and requires the name of the ID and from which column in the file to read it.
+This is defined in the _Node ID mapping_ section of the details panel and requires the name of the ID and from which column in the file to read it.
 
 [.shadow]
 image::relationship-mapping.png[width=400]
@@ -87,7 +87,7 @@ image::node-exclude.png[width=300]
 == Complete the mapping
 
 If the mapping is not complete, ie. if any element in the model is missing the green checkmark, the import can't be run.
-If you try, Data Importer sends an error message and highlights which element(s) in the model is missing information and also which fields in the mapping details panel need to be filled out.
+If you try, Data Importer sends an error message and highlights which element(s) in the model is missing information and also which fields in the details panel need to be filled out.
 
 For nodes, the following information is required:
 

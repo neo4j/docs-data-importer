@@ -12,17 +12,15 @@ Data Importer is currently available both as part of Neo4j Workspace and as a st
 Workspace is available on Neo4j AuraDB instances, and Data Importer is accessed via the _Import_ tab.
 Additionally, Workspace offers options to both query and visually explore your data, once it's imported.
 
-The standalone version is accessible at link:https://data-importer.neo4j.io/[] using a secure connection.
-Additionally, Data Importer standalone is also available at link:https://data-importer.graphapp.io/[] and link:http://data-importer.graphapp.io/[] with both secure and insecure connections.
+The standalone version of Data Importer is accessible at link:https://data-importer.neo4j.io/[] using a secure connection.
+Additionally, Data Importer standalone is also available at link:https://data-importer.graphapp.io/[] with both secure and insecure connections.
 
 [NOTE]
 ====
 In general, it is recommended to always use a secure connection.
-However, some web browsers have security constraints that require an unsecure connection.
+However, if your Neo4j instance is insecure, in some cases, due to browser constraints, an insecure connection to Data Importer is required.
 ====
 
-Workspace offers interactive, in-product guides where you can get a hands-on learning experience with all three available tools, Import, Explore, and Query.
-
 Many things covered in this document are also offered in the Import guide.
-The guides can be accessed from the top right corner of the UI.
+The guides can be accessed from the top right corner of the Data Importer UI.
 

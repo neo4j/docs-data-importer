@@ -1,7 +1,7 @@
 :description: This section describes how to do the actual import of data with Neo4h Data Importer.
 = Import
 
-Once the files are uploaded, the data model complete, and all elements mapped, the import can be run.
+Once the files are provided, the data model complete, and all elements mapped, the import can be run.
 However, you can _preview_ your data at any time and make sure that everything is mapped the way you expect before you run the actual import.
 
 [[preview]]
@@ -11,7 +11,7 @@ The preview button is located next to the _Run import_ button and unlike running
 
 image::preview.png[]
 
-When you run a preview, only a sample of the uploaded data (the files provided to Data Importer) is scanned.
+When you run a preview, only a sample of the provided data is scanned.
 This means that the preview can differ from the final import in terms of connectedness, for example.
 Even so, the preview can be very useful to get an overview of the data, especially on smaller datasets.
 
@@ -51,6 +51,6 @@ It finds the start (source) and end (target) nodes and creates a relationship be
 
 
 
-== Errors
+//== Errors
 
 

@@ -13,7 +13,7 @@ See link:https://neo4j.com/docs/cypher-manual/current/clauses/load-csv/[Cypher M
 == Neo4j-admin import
 
 To load large amounts of CSV data into an _offline_ database, using the Neo4j-admin tool to import is convenient.
-See link:https://neo4j.com/docs/cypher-manual/current/clauses/load-csv/[Operations Manual - Neo4j-admin] for more informartion.
+See link:https://neo4j.com/docs/operations-manual/current/tools/neo4j-admin/neo4j-admin-import/[Operations Manual - Neo4j-admin] for more informartion.
 
 == Neo4j connectors
 
@@ -24,4 +24,4 @@ See link:https://neo4j.com/docs/getting-started/languages-guides/integration-too
 
 If your data is not in a CSV format, using APOC Load procedures allows you to ingest data from formats including json, xml and arrow.
 APOC is a library of user-defined procedures and functions that extends the use of Cypher.
-See link:https://neo4j.com/docs/getting-started/languages-guides/integration-tools/integration/[APOC user guide -> apoc.load] for more information about the load procedure.
+See link:https://neo4j.com/docs/apoc/current/overview/apoc.load/[APOC user guide -> apoc.load] for more information about the load procedure.

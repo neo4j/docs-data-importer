@@ -26,7 +26,8 @@ Additionally, the node needs to have at least one property and an ID.
 The properties are key-value pairs that describe the node.
 
 The ID is used to uniquely identify nodes and when connecting nodes to each other in relationships.
-If a node is seen more than once in the file, only the most recently viewed properties are set and this ensures that the node is not duplicated.
+If a node with the same ID is seen more than once, it is only created for the first instance observed in the flat file.
+If a node with the same ID is seen again, any properties are updated, resulting in the most recently read properties being kept.
 As mentioned, the node ID is crucial when creating relationships and this is explained in further detail in the section on mapping <<mapping-relationships, relationships>>.
 
 If you added the file already, you can choose to map properties from that file.
@@ -34,7 +35,7 @@ Data Importer derives the properties from the columns in the file and guesses th
 With this option, you can select which properties to use.
 Once selected, you can rename the properties, change the data type, if needed, and select which property should serve as the node ID.
 
-By default, Data Importer uses the property with `id` in its name as the ID, but if none of the columns in the mapped file meet this condition, or if more than one do, you have to manually select which property to use as the node ID.
+By default, Data Importer uses the property with `id` in its name as the ID, but if none of the columns in the mapped file meet this condition, or if more than one does, you have to manually select which property to use as the node ID.
 Whether you let Data Importer select the ID or you do it manually, every node _needs_ to have an ID in order to complete the mapping.
 
 The property used as node ID is marked with a key icon.
@@ -47,17 +48,25 @@ image::node-id.png[width=400]
 
 Much like how a node needs to have a label, a relationship needs to have a type.
 This can be typed directly on the relationship or in the details panel.
-The file to map the relationship to is selected in the same way as for nodes and can be a separate file that contains only relationships or a file that contains both nodes and relationships.
-The crucial part is defining the _From_ and _To_ nodes connected by the relationship.
-This is defined in the _Node ID mapping_ section of the details panel and requires the name of the ID and from which column in the file to read it.
+The file to map the relationship to is selected in the same way as for nodes. Depending on your data, this file could be:
+
+* The same file as used for the nodes at both ends of the relationship.
+In this case, Data Importer automatically maps the file and appropriate columns.
+It is easy for it to indentify the file columns to use in the _From_ and _To_ mapping, as they have already been mapped as ID properties to the nodes at each end.
+
+* A file that is used to define the node at only one end of the relationship, but also contains a column that contains the ID of the other node.
+In this case, you need to manually select the file and specify the _From_ and _To_ mapping manually.
+This is similar to a table in a relational database the contains a Foreign Key to link to another table, but here that key is used to link to another node rather than a table.
+
+* A completely separate file that is used solely to define the relationship.
+In this case, you need to select the relevant file and then map the columns in the file that correspond to the _From_ and _To_ node ID properties.
+This is similar to a _link table_ in relational database terms.
+
+
+This part is crucial to ensuring the relationships link nodes as indended. It is defined in the _Node ID mapping_ section of the details panel.
 
 [.shadow]
 image::relationship-mapping.png[width=400]
-
-If a relationship is drawn between two nodes that are already completely mapped and the file contains the both _From_ and _To_ nodes as well as the relationship definition, Data Importer automatically maps the nodes, their IDs, and ID columns.
-The only thing you need to do is define the relationship type.
-
-Similarly, if the file contains the relationship but only one of the nodes, Data Importer automatically maps the nodes and their IDs, but you need to define the relationship type and the ID columns for the nodes.
 
 == File filtering
 

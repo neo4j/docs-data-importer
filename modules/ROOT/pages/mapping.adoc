@@ -26,7 +26,8 @@ Additionally, the node needs to have at least one property and an ID.
 The properties are key-value pairs that describe the node.
 
 The ID is used to uniquely identify nodes and when connecting nodes to each other in relationships.
-If a node with the same ID is seen more than once, it is only created for the first instance observed in the flat file. If a node with the same ID is seen again, any properties will be updated, resulting in the most recently read properties being kept.
+If a node with the same ID is seen more than once, it is only created for the first instance observed in the flat file.
+If a node with the same ID is seen again, any properties are updated, resulting in the most recently read properties being kept.
 As mentioned, the node ID is crucial when creating relationships and this is explained in further detail in the section on mapping <<mapping-relationships, relationships>>.
 
 If you added the file already, you can choose to map properties from that file.
@@ -49,10 +50,17 @@ Much like how a node needs to have a label, a relationship needs to have a type.
 This can be typed directly on the relationship or in the details panel.
 The file to map the relationship to is selected in the same way as for nodes. Depending on your data, this file could be:
 
+* The same file as used for the nodes at both ends of the relationship.
+In this case, Data Importer automatically maps the file and appropriate columns.
+It is easy for it to indentify the file columns to use in the _From_ and _To_ mapping, as they have already been mapped as ID properties to the nodes at each end.
 
-1. The same file as used for the nodes at both ends of the relationship. In this case, Data Importer will automatically map the file and appropriate columns to save you time. It is easy for it to indentify the file columns to use in the _From_ and _To_ mapping, as they have already been mapped as ID properties to the nodes at each end.
-2. A file that is used to define the node at only one end of the relationship, but also contains a column that contains the ID of the other node. In this case, you need to manually select the file and specify the _From_ and _To_ mapping manually. This is similar to a table in a relational database the contains a Foreign Key to link to another table, but here we're using that key to link to another node rather than a table.
-3. A completely separate file that is used solely to define the relationship. In this case, you need to select the relevant file and then map the columns in the file that correspond to the _From_ and _To_ node id properties. This is similar to a 'link table' in relational database terms.
+* A file that is used to define the node at only one end of the relationship, but also contains a column that contains the ID of the other node.
+In this case, you need to manually select the file and specify the _From_ and _To_ mapping manually.
+This is similar to a table in a relational database the contains a Foreign Key to link to another table, but here that key is used to link to another node rather than a table.
+
+* A completely separate file that is used solely to define the relationship.
+In this case, you need to select the relevant file and then map the columns in the file that correspond to the _From_ and _To_ node ID properties.
+This is similar to a _link table_ in relational database terms.
 
 
 This part is crucial to ensuring the relationships link nodes as indended. It is defined in the _Node ID mapping_ section of the details panel.

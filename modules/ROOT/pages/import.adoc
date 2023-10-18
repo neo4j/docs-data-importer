@@ -9,7 +9,7 @@ However, you can _preview_ your data at any time and make sure that everything i
 
 The preview button is located next to the _Run import_ button and unlike running the import, the preview does *not* require an active connection.
 
-image::preliminary.png[]
+image::preview-dropdown.png[width=300]
 
 When you run a preview, only a sample of the provided data is scanned.
 This means that the preview can differ from the final import in terms of connectedness, for example.
@@ -17,7 +17,11 @@ Even so, the preview can be very useful to get an overview of the data, especial
 
 Since the preview does not actually import any data, it can be run iteratively until you are satisfied.
 
-The preview shows a sample of all data that is mapped _correctly_ in the model.
+You can preview **all** or **selected** elements in your data.
+If your model is particularly complex, it can be beneficial to preview only parts of the data.
+To use this feature, select the parts of your model that you want to preview and _Preview selected_ from the dropdown.
+
+The preview shows a sample of either all or selected data that is mapped _correctly_ in the model.
 Unlike the actual import, the preview can be run regardless of the completeness of the mapping.
 If any element is missing the green checkmark in the model, it will _not_ be included in the preview, but the preview can still be run.
 
@@ -47,6 +51,21 @@ The load statement creates nodes for every item in the mapped file and adds the 
 For relationships, there is only a load statement.
 It finds the start (source) and end (target) nodes and creates a relationship between them and sets the assigned (if any) properties to the relationship.
 
+== Generate Cypher script
+
+There may be situations where you want use the import logic elsewhere or where you need more complex transformations than Data Importer allows.
+Once you have added your files and mapped the data, instead of running the import, you can generate the corresponding Cypher script representing the model and mapping.
+
+The script can be used in the _Query_ tab of Workspace, provided that the files are accessible to the DBMS, or on the command line via Cypher shell, for example.
+
+The generated code contains comments that help you understand how the load statement works and what different parts it consists of.
+This also helps you understand where you need to make changes to adapt it to where you intend to run it.
+
+You can download the script with or without the files.
+
+The _Generate Cypher script_ is available from the more menu.
+
+image::generate-cypher.png[]
 
 
 

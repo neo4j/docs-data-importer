@@ -42,5 +42,5 @@ For more information on the settings, see xref:mapping.adoc#exclude-list[Node ex
 The details panel contains two tabs, _Definition_ and _Constraints & Indexes_.
 The _Defintion_ tab is where you give labels to nodes and relationships, map them to files from the files panel, and specify their properties.
 See xref:mapping.adoc[] for more information.
-The _Constraints & Indexes_ tab allows you to see details about constraints and indexes and lets add or modify the latter.
+The _Constraints & Indexes_ tab allows you to see details about constraints and indexes and lets you add or modify the latter.
 See xref:indexes-constraints.adoc[] for more information.

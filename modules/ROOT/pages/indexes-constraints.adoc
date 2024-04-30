@@ -1,7 +1,7 @@
 :description: This section describes how to use indexes and constraints in Data Importer
 = Indexes and constraints
 
-Data Importer supports both constraints and indexes which improve read performance of queries.
+Data Importer supports constraints and indexes which ensures the accuracy of data and improve read performance of queries.
 They are found in the details panel and the tab is visible when a single node is selected in the data model panel.
 
 image::constraints-tab.png[]

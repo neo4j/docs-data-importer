@@ -9,6 +9,7 @@ This manual covers the following areas:
 * xref:file-provision.adoc[File provision] -- How to provide files for import.
 * xref:modeling.adoc[Modeling] -- Guidelines to model your data.
 * xref:mapping.adoc[Mapping] -- How to map your data to the model.
+* xref:indexes-constraints.adoc[Indexes and constraints] -- Optimize query performance.
 * xref:import.adoc[Import] -- Preview and import your data.
 * xref:import-others.adoc[Other options for data import] -- Other ways to import data.
 

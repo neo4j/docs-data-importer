@@ -37,10 +37,10 @@ See xref:import.adoc#run-import[Run the import] for more information about the c
 The `...` menu contains options to open a saved model, with or without data, to save your current model, with or without data, settings for the import, and an option to clear everything.
 For more information on the settings, see xref:mapping.adoc#exclude-list[Node exclude list].
 
-
 == Details panel
 
-Every element in the data model is mapped in this section.
-This is where you give labels to nodes and relationships, map them to files from the files panel, and specify their properties.
+The details panel contains two tabs, _Definition_ and _Constraints & Indexes_.
+The _Defintion_ tab is where you give labels to nodes and relationships, map them to files from the files panel, and specify their properties.
 See xref:mapping.adoc[] for more information.
-
+The _Constraints & Indexes_ tab allows you to see details about constraints and indexes and lets you add or modify the latter.
+See xref:indexes-constraints.adoc[] for more information.

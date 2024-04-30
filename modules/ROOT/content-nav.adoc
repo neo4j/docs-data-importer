@@ -4,5 +4,6 @@
 * xref:file-provision.adoc[]
 * xref:modeling.adoc[]
 * xref:mapping.adoc[]
+* xref:indexes-constraints.adoc[]
 * xref:import.adoc[]
 * xref:import-others.adoc[]

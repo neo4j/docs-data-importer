@@ -13,6 +13,8 @@ This manual covers the following areas:
 * xref:import.adoc[Import] -- Preview and import your data.
 * xref:import-others.adoc[Other options for data import] -- Other ways to import data.
 
+include::{ga-promos-uri}/import.adoc[]
+
 ifdef::backend-pdf[]
 include::license.adoc[leveloffset=+1]
 endif::[]

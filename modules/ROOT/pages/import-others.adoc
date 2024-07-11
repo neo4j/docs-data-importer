@@ -25,3 +25,6 @@ See link:https://neo4j.com/docs/getting-started/languages-guides/integration-too
 If your data is not in a CSV format, using APOC Load procedures allows you to ingest data from formats including json, xml and arrow.
 APOC is a library of user-defined procedures and functions that extends the use of Cypher.
 See link:https://neo4j.com/docs/apoc/current/overview/apoc.load/[APOC user guide -> apoc.load] for more information about the load procedure.
+
+// Edit at: https://github.com/neo4j-graphacademy/courses/blob/main/asciidoc/courses/importing-fundamentals/promo.adoc
+include::https://raw.githubusercontent.com/neo4j-graphacademy/courses/main/asciidoc/courses/importing-fundamentals/promo.adoc[]

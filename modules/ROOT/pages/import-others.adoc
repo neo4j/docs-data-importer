@@ -18,7 +18,7 @@ See link:https://neo4j.com/docs/operations-manual/current/tools/neo4j-admin/neo4
 == Neo4j connectors
 
 Neo4j offers to capability of using different connectors to connect data from various sourced into Neo4j.
-See link:https://neo4j.com/docs/getting-started/languages-guides/integration-tools/integration/[Getting started -> Neo4j Connectors] for a list of available integrations.
+See link:https://neo4j.com/docs/connectors[Neo4j Connectors] for a list of available integrations.
 
 == APOC Load procedures
 

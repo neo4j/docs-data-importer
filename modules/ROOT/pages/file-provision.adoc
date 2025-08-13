@@ -8,7 +8,6 @@ The most common format for such files is CSV (comma-separated values), but Data 
 
 Data Importer requires all files to have a header row and at least one row of data.
 The header row speficies how the data in the file should be interpreted and contains information for each field.
-For more information about CSV files and the header format, see link:{neo4j-docs-base-uri}/operations-manual/current/tools/neo4j-admin/neo4j-admin-import/#import-tool-header-format[Operations Manual -> CSV header format].
 Keep in mind that the column names must be unique, i.e. it is not possible to have two columns with the same name within the same file.
 
 The files are provided in the _Files_ panel of Data Importer.

@@ -1,6 +1,9 @@
 = Neo4j Data Importer
 
 Neo4j Data Importer is a UI-based tool for importing data into Neo4j.
+This functionality exists both as a standalone tool as well as a service in the fully managed Neo4j Aura console.
+This manual covers the standalone tool.
+For information about the import tool in the Aura console, see link:{neo4j-docs-base-uri}/aura/import/introduction[Aura Documentation → Import].
 
 This manual covers the following areas:
 

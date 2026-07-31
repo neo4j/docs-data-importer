@@ -14,7 +14,7 @@ Additionally, the console offers options to both query and visually explore your
 For more information about the import experience in Aura, see link:{neo4j-docs-base-uri}/aura/import/introduction[Aura Documentation → Import].
 
 The standalone version of Data Importer is accessible at link:https://data-importer.neo4j.io/[] using a secure connection.
-Additionally, Data Importer standalone is also available at link:https://data-importer.graphapp.io/[] with both secure and insecure connections.
+Additionally, Data Importer standalone is also available at link:https://data-importer.graphapp.io/[] with secure connections, and an unsecured connection only allowed when connecting to `localhost`.
 
 [NOTE]
 ====
